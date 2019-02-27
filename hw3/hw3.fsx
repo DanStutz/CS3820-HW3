@@ -94,9 +94,22 @@ let parse (p : string) : int list =
 
 (* Part 3 *)
 
+
+//  1. (0*10*10*) + (0*10*) + (0*)
+
 (*
 
+    2. The regex expression which captures all numbers in exponential notation is: d(.) d^+ (E + e) (- + 2)d
 
+    Example: Say d represents a numeral,
+      
+      d^+ = d* - 2
 
+      d = 0,1,2,3,...,9
+    
+    3. (L + D)*(LD + DL)(L + D)*
 
+    The outer two parts generate any combination of L and D in all order while the middle part generates at least one L and one D in two orders.
 *)
+
+
